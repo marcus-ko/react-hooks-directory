@@ -2,7 +2,7 @@
 
 export default function ListPeople(props) {
   return (
-    <section>
+    <section className="list-view">
       <div>
         <ul>
           {props.contacts.map((contact, index) => {

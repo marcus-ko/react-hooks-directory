@@ -8,11 +8,6 @@ import { useState } from 'react';
 // }
 
 export default function AddPerson({ addContact }) {
-  // const initialValues = {
-  //   name: "",
-  //   phone: "",
-  //   email: "",
-  // };
   const [value, setValue] = useState({
     name: '',
     phone: '',
@@ -26,18 +21,6 @@ export default function AddPerson({ addContact }) {
     });
   };
 
-  // const handleInputChange = (e) => {
-  //   //const name = e.target.name
-  //   //const value = e.target.value
-  //   const { name, value } = e.target;
-
-  //   setValue ({
-  //     ...value,
-  //     [name]: value,
-  //     [phone]: value,
-  //     [email]: value
-  //   });
-  // };
   const handleSubmit = event => {
     event.preventDefault();
 
@@ -50,60 +33,24 @@ export default function AddPerson({ addContact }) {
     setValue({ name: '', phone: '', email: '' });
   };
 
-  // const submitHandle = e => {
-  //   e.preventDefault()
-  //   console.log(inputs)
-  // }
-
-  // function handleChange(event) {
-  //   // Here, we invoke the callback with the new value
-
-  // }
-  // capture user input in this state for each input
-  // const [nameValue, setNameValue] = useState("");
-  // const [phoneValue, setPhoneValue] = useState("");
-  // const [emailValue, setEmailValue] = useState("");
-  // const [allValue, setAllValue] = useState([]);
-
-  // const handleChange = (e) => {
-  //   setAllValue(e.target.value)
-  // }
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   //const newData = {nameValue, phoneValue, emailValue};
-  //   setAllValue([...allValue, newData]);
-  //   setNameValue("");
-  //   setPhoneValue("");
-  //   setEmailValue("");
-
-  //   // if(!phoneValue) return;
-  //   // addPhone(phoneValue);
-
-  //   // if(!emailValue) return;
-  //   // addEmail(emailValue);
-  //   // setValue("");
-  // }
   return (
-    <section>
-      <div className="card pa-30 mr-30">
-        <form onSubmit={handleSubmit} data-testid="add-person-form">
-          <div className="layout-column mb-15">
-            <label htmlFor="name" className="mb-3">
-              Person Name
+    <section className="form-view">
+      <div className="">
+        <form onSubmit={handleSubmit}>
+          <div className="">
+            <label htmlFor="name" className="">
+              Name
             </label>
             <input
               type="text"
-              placeholder="Enter Person Name"
+              placeholder="Enter Name"
               name="name"
               value={value.name}
-              data-testid="person-name-input"
               onChange={changeHandle}
             />
           </div>
-          <div className="layout-column mb-15">
-            <label htmlFor="number" className="mb-3">
+          <div className="">
+            <label htmlFor="number" className="">
               Phone Number
             </label>
             <input
@@ -112,31 +59,24 @@ export default function AddPerson({ addContact }) {
               length="10"
               value={value.phone}
               name="phone"
-              data-testid="phone-number-input"
               onChange={changeHandle}
             />
           </div>
-          <div className="layout-column mb-30">
-            <label htmlFor="email" className="mb-3">
+          <div className="">
+            <label htmlFor="email" className="">
               Email
             </label>
             <input
               type="email"
               placeholder="Enter Email Address"
               name="email"
-              data-testid="person-email-input"
               value={value.email}
               onChange={changeHandle}
             />
           </div>
-          <div className="layout-row justify-content-end">
-            <button
-              type="submit"
-              value="submit"
-              className="mx-0"
-              data-testid="add-person-button"
-            >
-              Add Person
+          <div className="">
+            <button type="submit" value="submit" className="">
+              Add Contact
             </button>
           </div>
         </form>

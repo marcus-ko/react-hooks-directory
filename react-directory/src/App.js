@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div>
-      <div className="flex align-items-center justify-content-center container">
+      <div className="container">
         <ListPeople contacts={contacts} />
         <AddPerson addContact={addContact} />
       </div>
