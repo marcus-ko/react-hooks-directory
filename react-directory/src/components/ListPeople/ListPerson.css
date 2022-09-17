@@ -1,0 +1,45 @@
+/* list container */
+section.list-view {
+  position: relative;
+  top: 0;
+}
+
+/* list heading */
+ul.list-heading li {
+  display: flex;
+}
+
+ul.list-heading li p {
+  border-bottom: 1px solid #999;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+}
+
+/* list body */
+ul.list-body li {
+  display: flex;
+}
+
+ul.list-body li p {
+  margin-top: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-bottom: 4px;
+}
+
+ul.list-heading li p.list-name-field,
+ul.list-body li p.list-name-field {
+  width: 300px;
+}
+
+ul.list-heading li p.list-phone-field,
+ul.list-body li p.list-phone-field {
+  width: 200px;
+}
+
+ul.list-heading li p.list-email-field,
+ul.list-body li p.list-email-field {
+  width: 500px;
+}

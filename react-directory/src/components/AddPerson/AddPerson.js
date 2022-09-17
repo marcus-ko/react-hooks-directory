@@ -37,7 +37,7 @@ export default function AddPerson({ addContact }) {
     <section className="form-view">
       <div className="">
         <form onSubmit={handleSubmit}>
-          <div className="">
+          <div className="input-form__wrapper">
             <label htmlFor="name" className="">
               Name
             </label>
@@ -49,7 +49,7 @@ export default function AddPerson({ addContact }) {
               onChange={changeHandle}
             />
           </div>
-          <div className="">
+          <div className="input-form__wrapper">
             <label htmlFor="number" className="">
               Phone Number
             </label>
@@ -62,7 +62,7 @@ export default function AddPerson({ addContact }) {
               onChange={changeHandle}
             />
           </div>
-          <div className="">
+          <div className="input-form__wrapper">
             <label htmlFor="email" className="">
               Email
             </label>
@@ -76,7 +76,7 @@ export default function AddPerson({ addContact }) {
           </div>
           <div className="">
             <button type="submit" value="submit" className="">
-              Add Contact
+              Submit
             </button>
           </div>
         </form>
