@@ -10,11 +10,14 @@ ul.list-heading li {
 }
 
 ul.list-heading li p {
-  border-bottom: 1px solid #999;
+  border: 1px solid #333;
   margin-left: 4px;
   margin-right: 4px;
   margin-bottom: 0;
   padding-bottom: 4px;
+  background-color: #288316;
+  color: #fff;
+  padding: 8px 0;
 }
 
 /* list body */

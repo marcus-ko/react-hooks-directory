@@ -1,0 +1,20 @@
+/* Form View */
+.form-view .input-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+.form-view .input-form__wrapper input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+.form-view .input-form__wrapper label {
+  /* position: absolute;
+  top: 0; */
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

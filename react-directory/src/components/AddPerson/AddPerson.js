@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import "./AddPerson.css";
+import './AddPerson.css';
 
 // Pass in initial values to state
 // const MyComponent = (initialValues = {}) => {
