@@ -16,9 +16,6 @@ const App = () => {
     },
   ]);
 
-  // const [toggle, setToggle] = useState(false);
-  // const [modalActive, setModalActive] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
 
   const addContact = value => {
@@ -39,6 +36,7 @@ const App = () => {
         <ListPeople contacts={contacts} />
 
         <Modal
+          closeTimeoutMS={200}
           isOpen={isOpen}
           onRequestClose={toggleModal}
           contentLabel="My dialog"

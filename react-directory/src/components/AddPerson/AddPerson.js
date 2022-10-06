@@ -74,11 +74,9 @@ export default function AddPerson({ addContact }) {
               onChange={changeHandle}
             />
           </div>
-          <div className="">
-            <button type="submit" value="submit" className="">
-              Submit
-            </button>
-          </div>
+          <button type="submit" value="submit" className="btn-submit">
+            Submit
+          </button>
         </form>
       </div>
     </section>
