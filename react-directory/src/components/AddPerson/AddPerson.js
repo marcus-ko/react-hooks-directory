@@ -7,7 +7,7 @@ import './AddPerson.css';
 //   ...
 // }
 
-export default function AddPerson({ addContact }) {
+export default function AddPerson({ addContact, toggleModal }) {
   const [value, setValue] = useState({
     name: '',
     phone: '',
@@ -29,8 +29,9 @@ export default function AddPerson({ addContact }) {
     addContact(value);
     // clear input
     // setValue('');
-    console.log(value);
+    // console.log(value);
     setValue({ name: '', phone: '', email: '' });
+    toggleModal();
   };
 
   return (

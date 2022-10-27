@@ -41,7 +41,7 @@ const App = () => {
           onRequestClose={toggleModal}
           contentLabel="My dialog"
         >
-          <AddPerson addContact={addContact} />
+          <AddPerson addContact={addContact} toggleModal={toggleModal} />
           <button className="close-modal" onClick={toggleModal}>
             X
           </button>
